@@ -2,13 +2,106 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Eventos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Eventos Chiapas</title>
+    <!-- Tu hoja de estilos principal -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Estilos complementarios para el funcionamiento del carrusel y adaptación de tarjetas -->
+    <style>
+        .lista-eventos {
+            flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea si no caben en la pantalla */
+        }
+        .evento-card {
+            width: 300px; /* Ancho fijo para mantener la uniformidad */
+            text-align: left; /* Alineación de texto más natural para tarjetas con mucho contenido */
+            display: flex;
+            flex-direction: column;
+        }
+        .evento-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        /* Contenedor del carrusel con scroll horizontal */
+        .carrusel-imagenes {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory; /* Hace que el scroll se detenga exactamente en cada imagen */
+            gap: 10px;
+            margin-top: 15px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+        }
+        .carrusel-imagenes img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            scroll-snap-align: center;
+            flex: 0 0 100%; /* Cada imagen ocupa el ancho completo del carrusel */
+        }
+        /* Diseño sutil para la barra de desplazamiento (Scrollbar) */
+        .carrusel-imagenes::-webkit-scrollbar {
+            height: 6px;
+        }
+        .carrusel-imagenes::-webkit-scrollbar-thumb {
+            background-color: #007bff;
+            border-radius: 10px;
+        }
+        .carrusel-imagenes::-webkit-scrollbar-track {
+            background: #e0e0e0;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Lista de Eventos en Chiapas</h2>
-    <ul>
-        <li>Fiesta Grande de Chiapa de Corzo</li>
-        <li>Festival Internacional de la Marimba</li>
-    </ul>
+    <main class="contenedor-principal">
+        <h2 class="titulo-seccion">Lista de Eventos en Chiapas</h2>
+        
+        <ul class="lista-eventos">
+            <!-- Evento 1: Fiesta Grande -->
+            <li class="evento-card">
+                <h3>🎉 Fiesta Grande de Chiapa de Corzo</h3>
+                <p>Una de las celebraciones más antiguas, llena de color, parachicos y chiapanecas.</p>
+                <div class="carrusel-imagenes">
+                    <img src="https://mexicorutamagica.mx/wp-content/uploads/2023/02/fiesta-grande-chiapa-de-corzo.jpg" alt="Festividad tradicional">
+                    <img src="https://diariodechiapas.com/wp-content/uploads/2026/01/FOTO-POR-LA-CONCIENCIA-copia-2.webp" alt="Calles coloridas">
+                </div>
+            </li>
+
+            <!-- Evento 2: Festival Internacional del Café -->
+            <li class="evento-card">
+                <h3>☕ Festival Internacional del Café</h3>
+                <p>Exhibición, talleres y degustación de los mejores granos de la región.</p>
+                <div class="carrusel-imagenes">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=400&q=80" alt="Taza de café">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Granos de café">
+                </div>
+            </li>
+
+            <!-- Evento 3: Feria Chiapas -->
+            <li class="evento-card">
+                <h3>🎡 Feria Chiapas</h3>
+                <p>La máxima fiesta ganadera, agrícola y comercial del estado en Tuxtla Gutiérrez.</p>
+                <div class="carrusel-imagenes">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=400&q=80" alt="Juegos mecánicos iluminados">
+                    <img src="https://blob.tusbuenasnoticias.com/images/2025/10/29/feria-chiapas-2025-costos-de-entrada-y-cartelera-de-artistas-476df557.png" alt="Feria de noche">
+                </div>
+            </li>
+
+            <!-- Evento 4: Festival Cervantino Barroco -->
+            <li class="evento-card">
+                <h3>🎭 Festival Cervantino Barroco</h3>
+                <p>Música, arte y expresiones culturales en las calles de San Cristóbal de las Casas.</p>
+                <div class="carrusel-imagenes">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=400&q=80" alt="Expresiones de arte">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80" alt="Presentación cultural">
+                </div>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
+
+y lo revisa aldo
