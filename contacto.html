@@ -2,13 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Eventos Chiapas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2>Contáctanos</h2>
-    <form>
-        <input type="text" placeholder="AAJDeV" required>
-        <input type="email" placeholder="aajdev.com" required>
-    </form>
+    <main class="contenedor-principal">
+        <h2 class="titulo-seccion">Contáctanos</h2>
+        <p class="texto-destacado">¿Tienes alguna duda o quieres promocionar un evento?</p>
+        
+        <form class="formulario-contacto" action="#" method="POST">
+            <input type="text" class="input-form" placeholder="Tu Nombre completo" required>
+            <input type="email" class="input-form" placeholder="Tu Correo electrónico" required>
+            
+            <textarea class="input-form" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+            
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </main>
 </body>
 </html>
