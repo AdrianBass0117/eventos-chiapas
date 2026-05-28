@@ -7,7 +7,7 @@ Este proyecto fue construido simulando un entorno de trabajo real, gestionando r
 * Luis Adrián Hernández Pérez
 * Josué Isaac Moreno López
 * Aldo
-* Diego
+* Luis Diego Rodriguez Hernández
 
 ## 🚀 Instrucciones de Uso
 
