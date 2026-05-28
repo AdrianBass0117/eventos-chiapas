@@ -4,7 +4,7 @@ Un sitio web estático desarrollado como práctica escolar enfocada en el flujo 
 
 ## 👥 Equipo de Desarrollo
 Este proyecto fue construido simulando un entorno de trabajo real, gestionando ramas y resolviendo conflictos con Git.
-* Adrián
+* Luis Adrián Hernández Pérez
 * Isaac
 * Aldo
 * Diego
