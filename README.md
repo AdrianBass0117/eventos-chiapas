@@ -16,4 +16,12 @@ Para visualizar y probar el proyecto de manera local, sigue estos sencillos paso
 1. *Clonar el repositorio:*
    Abre tu terminal y ejecuta el siguiente comando:
    ```bash
-   git clone [https://github.com/AdrianBass0117/eventos-chiapas.git](https://github.com/AdrianBass0117/eventos-chiapas.git)
+   git clone (https://github.com/AdrianBass0117/eventos-chiapas.git)
+
+## 🛠️ Tecnologías Utilizadas
+
+* HTML5: Estructuración semántica de las vistas (index.html, eventos.html, contacto.html).
+* CSS3: Estilos globales, diseño de la interfaz y maquetación visual.
+* JavaScript (Vanilla): Lógica funcional para la interactividad de los carruseles de imágenes en la sección de eventos.
+* Git & GitHub: Control de versiones local y remoto, gestión de ramas, Pull Requests y resolución manual de conflictos.
+* GitHub Pages: Despliegue en vivo y alojamiento gratuito del sitio final.
